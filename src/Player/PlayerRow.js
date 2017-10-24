@@ -30,18 +30,18 @@ const PlayerRow = ( props ) => {
 	);
 
 	function getDepartmentClass( department ) {
-		if ( department == DEPARTMENT_IT ) {
+		if ( department == 'IT' ) {
 			return 'playerRow--IT';
 		}
-		if ( department == DEPARTMENT_MARKETING ) {
+		/*if ( department == DEPARTMENT.MARKETING ) {
 			return 'playerRow--MARKETING';
 		}
-		if ( department == DEPARTMENT_DESIGN ) {
+		if ( department == DEPARTMENT.DESIGN ) {
 			return 'playerRow--DESIGN';
 		}
-		if ( department == DEPARTMENT_ECONOMIC ) {
+		if ( department == DEPARTMENT.ECONOMIC ) {
 			return 'playerRow--ECONOMIC';
-		}
+		}*/
 	}
 	const departmentClass = getDepartmentClass(props.department);
 }

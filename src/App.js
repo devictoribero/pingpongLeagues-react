@@ -4,7 +4,7 @@ import LeagueList from "./League/LeagueList"
 import initJson from "./init.js"
 
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
 		super();
 		this.state = initJson;
@@ -23,5 +23,3 @@ class App extends Component {
 		);
 	}
 }
-
-export default App;
