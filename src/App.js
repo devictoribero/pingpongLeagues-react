@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PlayerList from "./Player/PlayerList"
 import LeagueList from "./League/LeagueList"
-import initJson from "./init.js"
+import initJson from "./init.json"
 
 
 export default class App extends Component {
-  constructor() {
-		super();
+  constructor( props ) {
+		super( props );
 		this.state = initJson;
 	}
 
@@ -14,11 +14,11 @@ export default class App extends Component {
 		return (
 			<div>
 				<PlayerList
-					players = {this.state.players}
+					players = { this.state.players }
 				/>
 				<LeagueList
-					leagues = {this.state.leagues}
-					players = {this.state.players}/>
+					leagues = { this.state.leagues }
+					players = { this.state.players }/>
 			</div>
 		);
 	}

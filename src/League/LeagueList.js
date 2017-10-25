@@ -10,8 +10,8 @@ const  LeagueList = ( props ) => {
 			</header>
 
 			<main className = "leaguesList__header">
-				{ props.leagues.map( league => {
-					return <LeagueRow {...league} players = {props.players}/>
+				{ props.leagues.map( ( league, i ) => {
+					return <LeagueRow key = {i} {...league} players = {props.players}/>
 				})}
 			</main>
 
